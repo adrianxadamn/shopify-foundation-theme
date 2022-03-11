@@ -1,0 +1,15 @@
+@mixin gradient-shimmer($color: #E5E5E5, $duration: 1.75s) {
+  animation-duration: $duration;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: gradient-shimmer;
+  animation-timing-function: linear;
+  background: darken($color, 4%);
+  background: linear-gradient(to right, $color 8%, darken($color, 5%) 38%, $color 54%);
+  background-size: 500px 500px;
+  position: relative;
+  @keyframes gradient-shimmer {
+    0% { background-position: -468px 0; }
+    100% { background-position: 468px 0 }
+  }
+}

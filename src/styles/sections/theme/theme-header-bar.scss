@@ -1,0 +1,14 @@
+.c-headerBar {
+  background-color: $color-primary;
+}
+
+.c-headerBar__wrapper {
+  padding: 10px 0;
+}
+
+.c-headerBar__message {
+  text-align: center;
+  color: $color-white;
+  font-size: 14px;
+  font-weight: 500;
+}

@@ -1,0 +1,9 @@
+.o-pageNarrow {
+  margin: 0 auto;
+  padding: 60px 0 100px;
+  max-width: 900px;
+  width: calc(100% - 60px);
+  @include media-xs {
+    width: calc(100% - 50px);
+  }
+}

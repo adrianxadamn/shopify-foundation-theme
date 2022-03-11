@@ -1,0 +1,54 @@
+.c-form {
+  margin: 0 auto;
+}
+
+.c-form--isNarrow {
+  text-align: center;
+}
+
+.c-form__text {
+  margin: -20px 0 24px !important;
+}
+
+.c-form__content {
+  .c-form--isNarrow & {
+    max-width: 450px;
+    margin: 0 auto;
+  }
+}
+
+.c-form__alert {
+  width: 100%;
+  padding: 15px 10px;
+  border-radius: 3px;
+  color: $color-white;
+  margin-bottom: 20px;
+  &.c-form__alert--isError {
+    background: $color-error;
+  }
+  &.c-form__alert--isSuccess {
+    background: $color-success;
+  }
+}
+
+.c-form__submit {
+  margin-top: 30px;
+}
+
+.c-form__sub {
+  margin-top: 20px; 
+}
+
+.c-form__subText {
+  line-height: 1.75 !important;
+}
+
+
+.c-form__subLink {
+  font-weight: 700;
+  text-decoration: underline;
+  &:hover {
+    cursor: pointer;
+    text-decoration: none;
+  }
+}

@@ -1,0 +1,11 @@
+@mixin grid($display: grid, $justify-c: start, $columns: none, $rows: none, $align-c: center, $gap: 0px, $auto-flow: column, $justify-i: start, $align-i: start) {
+  display: $display;
+  justify-content: $justify-c;
+  align-content: $align-c;
+  grid-gap: $gap;
+  grid-auto-flow: $auto-flow;
+  grid-template-columns: $columns;
+  grid-template-rows: $rows;
+  justify-items: $justify-i;
+  align-items: $align-i;
+}

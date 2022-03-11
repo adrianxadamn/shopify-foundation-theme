@@ -1,0 +1,12 @@
+body {
+  background-color: $color-body;
+  min-height: 100vh;
+  color: $color-black;
+  font-family: $font-body;
+  font-size: 18px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

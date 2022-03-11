@@ -1,0 +1,65 @@
+.c-h1 {
+  display: block;
+  @include text-heading;
+  font-size: 36px;
+  margin: 0 0 24px;
+  &.c-h1--isLabel {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+}
+
+.c-h2 {
+  display: block;
+  @include text-heading;
+  font-size: 28px;
+  margin: 0 0 20px;
+  &.c-h2--isLabel {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+}
+
+.c-h3 {
+  display: block;
+  @include text-heading;
+  font-size: 20px;
+  margin: 0 0 16px;
+  &.c-h3--isLabel {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+}
+
+.c-h4 {
+  display: block;
+  @include text-heading;
+  font-size: 18px;
+  margin: 0 0 12px;
+  &.c-h4--isLabel {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+}
+
+.c-h5 {
+  display: block;
+  @include text-heading;
+  font-size: 16px;
+  margin: 0 0 10px;
+  &.c-h5--isLabel {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+}
+
+.c-h6 {
+  display: block;
+  @include text-heading;
+  font-size: 14px;
+  margin: 0 0 8px;
+  &.c-h6--isLabel {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+}

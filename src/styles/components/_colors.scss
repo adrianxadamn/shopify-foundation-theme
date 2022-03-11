@@ -1,0 +1,55 @@
+.c-colorSwatchGrid {
+  display: grid;
+  grid-template-columns: repeat(25, 1fr);
+  grid-gap: 10px;
+}
+
+.c-colorSwatch {
+  position: relative;
+  display: inline-block;
+  width: 20px;
+  height:  20px;
+  border: 1px solid #000;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.c-colorSwatch--active .c-colorSwatch__bubble {
+  display: block;
+}
+
+.c-colorSwatch__bubble {
+  display: none;
+  position: absolute;
+  bottom: calc(100% + 15px);
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 100px;
+}
+
+.c-bubble {
+  cursor: default;
+  position: relative;
+  background-color: #000;
+  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+  padding: 12px;
+}
+
+.c-bubble::before {
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #000;
+}
+
+.nowrap {
+  white-space: nowrap;
+}

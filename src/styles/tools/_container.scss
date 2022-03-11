@@ -1,0 +1,13 @@
+@import "media";
+
+@mixin container() {
+  margin: 0 auto;
+  max-width: 1220px;
+  width: calc(100% - 60px);
+  @include media-mobile-down {
+    width: calc(100% - 40px);
+  }
+  @include media-xs {
+    width: calc(100% - 30px);
+  }
+}

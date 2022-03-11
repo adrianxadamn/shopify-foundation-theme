@@ -1,0 +1,8 @@
+.o-body {
+  width: 100%;
+  min-height: 100vh;
+  @include flex($direction: column, $align: stretch, $wrap: nowrap);
+}
+.o-body--noScroll {
+  overflow: hidden;
+}

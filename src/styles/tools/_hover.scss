@@ -1,0 +1,16 @@
+@mixin hover-fade($opacity: .5, $duration: .15s, $ease: ease-in-out) {
+  transition: opacity $duration $ease;
+  &:hover {
+    cursor: pointer;
+    opacity: $opacity;
+  }
+}
+
+@mixin hover-color($start: $color-black, $end: $color-primary, $duration: .15s, $ease: ease-in-out) {
+  color: $start;
+  transition: color $duration $ease;
+  &:hover {
+    cursor: pointer;
+    color: $end;
+  }
+}

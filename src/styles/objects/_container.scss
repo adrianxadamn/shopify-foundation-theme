@@ -1,0 +1,12 @@
+.o-container {
+  @include container;
+}
+
+.o-containerLarge {
+  width: calc(100% - 40px);
+  max-width: 1400px;
+  margin: 0 auto;
+  @include media-tablet-up {
+    width: calc(100% - 60px);
+  }
+}

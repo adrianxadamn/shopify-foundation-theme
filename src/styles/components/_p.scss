@@ -1,0 +1,35 @@
+.c-p1 {
+  display: block;
+  @include text-body;
+  font-size: 22px;
+  margin: 0 0 20px;
+}
+
+.c-p2 {
+  display: block;
+  @include text-body;
+  font-size: 18px;
+  margin: 0 0 15px;
+}
+
+.c-p3 {
+  display: block;
+  @include text-body;
+  font-size: 16px;
+  margin: 0 0 12px;
+  line-height: 1.5;
+}
+
+.c-p4 {
+  @include text-body;
+  font-size: 14px;
+  margin: 0 0 10px;
+  line-height: 1.5;
+}
+
+.c-p5 {
+  @include text-body;
+  font-size: 12px;
+  margin: 0 0 8px;
+  line-height: 1.25;
+}

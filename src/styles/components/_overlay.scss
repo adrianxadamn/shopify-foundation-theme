@@ -1,0 +1,12 @@
+.c-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba($color-black, .5);
+  transition-duration: .15s;
+  transition-timing-function: ease-in-out;
+  transition-property: opacity;
+  z-index: $z-index-overlay;
+}

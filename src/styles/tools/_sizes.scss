@@ -1,0 +1,12 @@
+@mixin full-width {
+  width: 100% !important;
+  min-width: 100% !important;
+}
+
+@mixin full-screen-width {
+  width: calc(100vw + 2px) !important;
+  min-width: calc(100vw + 2px) !important;
+  position: relative !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+}

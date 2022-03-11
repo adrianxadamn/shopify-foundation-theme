@@ -1,0 +1,1 @@
+import '@styles/sections/theme/theme-footer-main.scss';

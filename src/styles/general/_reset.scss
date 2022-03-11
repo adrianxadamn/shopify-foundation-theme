@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+button {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  border: 0;
+}
+
+img,
+object,
+video,
+embed {
+  height: auto;
+  max-width: 100%;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+  width: inherit;
+  height: inherit;
+}
+
+figure {
+  margin: 0;
+}
+
+address {
+  font-style: normal;
+}

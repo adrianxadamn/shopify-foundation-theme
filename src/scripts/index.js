@@ -3,13 +3,13 @@
  */
 import { createApp } from 'vue'
 import { createStore } from 'vuex'
-import './css/main.css'
+import '../styles/main.css'
 
 /**
  * vuex
  * auto-import all modules and prepare shared store
  */
-const vuexModules = require.context('./vue/store/', true, /\.js$/)
+const vuexModules = require.context('../vue/store/', true, /\.js$/)
 const modules = {}
 
 vuexModules.keys().forEach(key => {
@@ -32,7 +32,7 @@ const createVueApp = () => {
    * vue components
    * auto-import all vue components
    */
-  const vueComponents = require.context('./vue/components/', true, /\.(vue|js)$/)
+  const vueComponents = require.context('../vue/components/', true, /\.(vue|js)$/)
 
   vueComponents.keys().forEach(key => {
     const component = vueComponents(key).default
@@ -49,7 +49,7 @@ const createVueApp = () => {
    * vue mixins
    * auto-register all mixins with a 'global' keyword in their filename
    */
-  const mixins = require.context('./vue/mixins/', true, /.*global.*\.js$/)
+  const mixins = require.context('../vue/mixins/', true, /.*global.*\.js$/)
 
   mixins.keys().forEach(key => {
     app.mixin(mixins(key).default)
@@ -59,7 +59,7 @@ const createVueApp = () => {
    * vue directives
    * auto-register all directives with a 'global' keyword in their filename
    */
-  const directives = require.context('./vue/directives/', true, /.*global.*\.js$/)
+  const directives = require.context('../vue/directives/', true, /.*global.*\.js$/)
 
   directives.keys().forEach(key => {
     const directive = directives(key).default
